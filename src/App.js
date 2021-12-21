@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, alert } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './sass/app.scss';
@@ -7,6 +7,7 @@ import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
 import AddFavorites from './components/AddFavorites';
 import RemoveFavorite from './components/removeFavorites';
+import AddAlert from './components/alert';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -62,6 +63,9 @@ const App = () => {
       <div className='row d-flex justify-content-center'>
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
+
+      <AddAlert />
+
       <div className='row d-flex align-items-center mt-4 mb-4'>
         <MovieListHeading heading='Movies' />
       </div>

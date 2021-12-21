@@ -6,12 +6,34 @@ body {
   background-color: $body-bg !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-style: oblique;
 }
 
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-//     monospace;
-// }
+.alertBox {
+  color: $danger;
+  font-weight: 700;
+  font-style: normal;
+
+  //background-color: $info;
+  padding: 3px;
+  margin: 2px;
+}
+
+.closeBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  cursor: pointer;
+
+  &:hover {
+    fill: $primary;
+  }
+}
 
 .row > * {
   display: flex;
@@ -51,7 +73,7 @@ body {
 }
 
 .addFav {
-  color: $white;
+  color: $info;
 }
 
 .searchBox {

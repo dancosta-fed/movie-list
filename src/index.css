@@ -1,18 +1,84 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 11 | @import "bootstrap";
- *    |         ^^^^^^^^^^^
- *    '
- *   src/sass/_utilities.scss 11:9  @import
- *   src/sass/app.scss 1:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 11 \2502  @import \"bootstrap\";\a    \2502          ^^^^^^^^^^^\a    \2575 \a   src/sass/_utilities.scss 11:9  @import\a   src/sass/app.scss 1:9          root stylesheet";
+/* change the colors */
+body {
+  margin: 0;
+  background-color: #f9b233 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-style: oblique;
 }
+
+.alertBox {
+  color: #dd0000;
+  font-weight: 700;
+  font-style: normal;
+  padding: 3px;
+  margin: 2px;
+}
+
+.closeBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  cursor: pointer;
+}
+.close:hover {
+  fill: #f04136;
+}
+
+.row > * {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+.image-container:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 10px 5px;
+}
+.image-container:hover .overlay {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.addFavText {
+  padding-right: 10px;
+}
+
+.addFav {
+  color: white;
+}
+
+.searchBox {
+  margin: 20px;
+  border-radius: 15px;
+}
+.searchBox:hover {
+  transform: scale(1.1);
+}
+
+.movieHeads {
+  color: #394f61;
+}
+
+/*# sourceMappingURL=index.css.map */
