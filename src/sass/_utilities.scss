@@ -7,3 +7,23 @@ $info: white;
 $heading: #394f61;
 
 $body-bg: #f9b233;
+
+// === KEY FRAMES === //
+
+@keyframes AlertTransition {
+  from {
+    color: $body-bg;
+  }
+  to {
+    color: $danger;
+  }
+}
+
+@keyframes BtnTransition {
+  from {
+    fill: $body-bg;
+  }
+  to {
+    fill: $danger;
+  }
+}

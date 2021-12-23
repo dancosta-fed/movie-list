@@ -1,4 +1,20 @@
 /* change the colors */
+@keyframes AlertTransition {
+  from {
+    color: #f9b233;
+  }
+  to {
+    color: #dd0000;
+  }
+}
+@keyframes BtnTransition {
+  from {
+    fill: #f9b233;
+  }
+  to {
+    fill: #dd0000;
+  }
+}
 body {
   margin: 0;
   background-color: #f9b233 !important;
@@ -14,6 +30,8 @@ body {
   font-style: normal;
   padding: 3px;
   margin: 2px;
+  animation-name: AlertTransition;
+  animation-duration: 5s;
 }
 
 .closeBtn {
@@ -25,6 +43,9 @@ body {
 
 .close {
   cursor: pointer;
+  animation-name: BtnTransition;
+  animation-duration: 5s;
+  margin-left: 5px;
 }
 .close:hover {
   fill: #f04136;
@@ -79,6 +100,12 @@ body {
 
 .movieHeads {
   color: #394f61;
+}
+
+.notification__item {
+  border-radius: 20px !important;
+  right: 22%;
+  box-shadow: 5px 10px !important;
 }
 
 /*# sourceMappingURL=index.css.map */

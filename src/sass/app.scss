@@ -14,10 +14,11 @@ body {
   color: $danger;
   font-weight: 700;
   font-style: normal;
-
-  //background-color: $info;
   padding: 3px;
   margin: 2px;
+
+  animation-name: AlertTransition;
+  animation-duration: 5s;
 }
 
 .closeBtn {
@@ -29,6 +30,9 @@ body {
 
 .close {
   cursor: pointer;
+  animation-name: BtnTransition;
+  animation-duration: 5s;
+  margin-left: 5px;
 
   &:hover {
     fill: $primary;
@@ -87,4 +91,10 @@ body {
 
 .movieHeads {
   color: $heading;
+}
+
+.notification__item {
+  border-radius: 20px !important;
+  right: 22%;
+  box-shadow: 5px 10px !important;
 }
